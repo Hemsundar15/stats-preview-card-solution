@@ -1,0 +1,15 @@
+/*-- Colors --*/
+
+:root{ 
+    --white--clr: rgb(255, 255, 255);
+    --black--clr: rgb(0, 0, 0);
+
+    //Primary
+    --very-dark-blue--clr: hsl(233, 47%, 7%);
+    --dark-desaturated-blue--clr: hsl(244, 38%, 16%);
+    --soft-violet--clr: hsl(277, 64%, 61%);
+
+    //Neutral
+    --slightly-transparent-white1--clr: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white2--clr: hsla(0, 0%, 100%, 0.6);
+}

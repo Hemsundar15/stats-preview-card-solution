@@ -1,0 +1,51 @@
+/*-- Typography --*/
+
+h1{
+	font-family: var(--inter--fnt);
+	font-size: 36px;
+
+	color: var(--white--clr);
+
+	span{
+		color: var(--soft-violet--clr);
+	}
+}
+
+p{
+	font-family: var(--inter--fnt);
+	font-size: 15px;
+	line-height: 165%;
+
+	color: var(--slightly-transparent-white1--clr);
+}
+
+h5{
+	font-size: 24px;
+	font-family: var(--inter--fnt);
+	font-weight: 700;
+
+	color: var(--white--clr);
+}
+
+h6{
+	margin-top: 6px;
+
+	font-family: var(--lexend-deca--fnt);
+	font-weight: 400;
+	font-size: 13px;
+	text-transform: uppercase;
+	
+	color: var(--slightly-transparent-white2--clr);
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+@media (max-width: 1110px) {
+	h1{
+		font-size: 28px;
+	}
+}

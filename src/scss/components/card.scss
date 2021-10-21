@@ -1,0 +1,97 @@
+.card{
+    height: 446px;
+    width: 1110px;
+
+    display: grid;
+    grid-template-columns: 570px 1fr;
+
+    $border-radius: 10px;
+    border-radius: $border-radius;
+
+    &__textbox{
+        padding: 72px 0 72px 72px;
+
+        background: var(--dark-desaturated-blue--clr);
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        
+        .card__title{
+            max-width: 18ch;
+        }
+
+        .card__description{
+            max-width: 40ch;
+            margin-top: 25px;
+        }
+        
+        .card__stats{
+            margin-top: 72px;
+
+            display: flex;
+            gap: 60px;
+            align-items: center;
+        }
+    }
+
+    &__image{
+        width: 100%;
+
+        background: linear-gradient(rgba(157, 0, 255, 0.4), rgba(157, 0, 255, 0.4)), url(/src/assets/image-header-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+    }
+}
+
+@media (max-width: 1110px) {
+    .card{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 780px;
+        width: 327px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px 1fr;
+
+        $border-radius: 10px;
+
+        &__textbox{
+            padding: 35px 0 0 0;
+
+            grid-column: 1/1;
+            grid-row: 2/3;
+
+            text-align: center;
+
+            border-top-right-radius: 0;
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+            border-top-left-radius: 0;
+
+            .card__title{
+                max-width: 15ch;
+                margin: 0 auto;
+            }
+
+            .card__description{
+                max-width: 29ch;
+                margin: 12px auto 0 auto;
+            }
+        
+            .card__stats{
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+            }
+        }
+
+        &__image{
+            border-top-right-radius: $border-radius;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: $border-radius;
+        }
+    }
+}
